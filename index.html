@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a1610">
+  <meta name="description" content="Malek Sakhraoui — thoughts, knowledge and projects.">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="backgroundCanvas" aria-hidden="true"></canvas>
+
+  <div id="layout" style="--reader-w: min(520px, 36vw)">
+  <main id="page">
+    <header id="about">
+      <h1 id="aboutTitle">HI! i'm Malek Sakhraoui</h1>
+      <p id="aboutText">Welcome to the place where i would share my thoughts, knowledge, and projects. If you don't know me yet, have a look at the BLOG section otherwise im just a tech who likes to build stuff.</p>
+    </header>
+    
+    <section id="blog">
+      <h2 id="blogTitle">Blog</h2>
+      <div id="blogList"></div>
+    </section>
+
+    <section id="projects">
+      <h2 id="projectsTitle">Projects</h2>
+      <div id="projectsList">
+        <article class="projectCard">
+          <h3 class="projectCardTitle">My personal linux setup</h3>
+          <p class="projectCardText">My personal linux setup running fedora 44 with umbriel and noctalia v5. automated dotfiles setup</p>
+          <a class="projectCardLink" href="https://github.com/msakhraoui/umbriel-dotfiles" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <aside id="reader" inert aria-labelledby="readerTitle">
+  <div class="readerInner">
+    <button id="readerClose" type="button" aria-label="Close post">✕</button>
+      <h2 id="readerTitle"></h2>
+      <p id="readerDate"></p>
+      <div id="readerBody"></div>
+  </div>
+  </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
