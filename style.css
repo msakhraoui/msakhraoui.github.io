@@ -72,6 +72,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
+#projectsList .projectCard:first-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
 
 .blogPost, .projectCard {
   background: rgba(30, 50, 38, 0.7);
